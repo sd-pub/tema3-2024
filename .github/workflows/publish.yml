@@ -1,0 +1,25 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - update_image
+
+jobs:
+  publish-sd-tema-3-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build the sd-tema-3 Docker image
+        run: |
+          docker build . --tag ghcr.io/robertgrancsa/sd-tema-3:latest
+          docker run ghcr.io/robertgrancsa/sd-tema-3:latest
+          docker push ghcr.io/robertgrancsa/sd-tema-3:latest

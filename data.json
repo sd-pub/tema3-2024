@@ -1,0 +1,47 @@
+{
+  "tests": [
+    [
+      {
+        "id": 0,
+        "name": "Friends Dummy",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 30
+      }
+    ],
+    [
+      {
+        "id": 0,
+        "name": "Posts Dummy",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 30
+      }
+    ],
+    [
+      {
+        "id": 0,
+        "name": "Feed Dummy",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 30
+      }
+    ]
+  ],
+  "test_path": "checker/",
+  "exec_name": [
+    "friends",
+    "posts",
+    "feed"
+  ],
+  "valgrind_enabled": false
+}

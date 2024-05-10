@@ -1,0 +1,11 @@
+.vscode
+
+*.o
+friends
+posts
+feed
+
+*.zip
+.env
+checker/output/*.out
+checker/output/*.valgrind
