@@ -7,9 +7,10 @@
 - Chitan Rafael
 
 Data publicării: 10.05.2024
-Deadline: 26.05.2024
 
-!Important Această temă se va face în echipe de câte 2 persoane și poate fi făcută împreună cu oricine din seria CA sau care repetă materia. Pentru corectarea mai ușoară a temelor, trebuie să aveți scris în README neapărat un mesaj sub formă:
+Deadline: 26.05.2024, ora 23:59
+
+> Această temă se va face în echipe de câte 2 persoane și poate fi făcută împreună cu oricine din seria CA sau care repetă materia. Pentru corectarea mai ușoară a temelor, trebuie să aveți scris în README neapărat un mesaj sub formă:
 
 ```
 Echipa tema 3 SD:
@@ -31,11 +32,11 @@ Unde id.moodle este id-ul vostru de pe Teams/Moodle, de exemplu andrei.popescu. 
 
 ## Introducere
 
-În urma brainstormingului intens, Marcel a ajuns la concluzia că ar fi benefic să-și unifice serviciile sale, în loc să le aibă separate. Astfel, el dorește să creeze propriile rețele de socializare favorite și vă solicită ajutorul pentru implementarea funcționalităților pe care le dorește în versiunea Alpha a platformei sale.
+Cum Marcel (din tema trecută) a avut un succes incredibil cu serviciile sale de stocare în cloud, a început să se gândească cum poate extinde serviciile sale pentru a putea concura cu giganții din industrie, vrând astfel să se lanseze pe piață globală. După câteva zile bune de brainstorming, el a realizat că ar fi foarte util dacă nu ar mai avea toate nevoile sale așa separate. În loc să aibă cloud storage pe "Gogu Drive", rețeaua de socializare pe "InstaBook" și aplicația lui favorită de împărtășit opinii "Z", ar fi mult mai simplu să le aibă pe toate în același loc.
 
-Pentru a face acest lucru, Marcel a împărțit cerințele sale în trei etape, corespunzând fiecărei părți a aplicației: prima etapă pentru partea de rețea de prietenie, a doua etapă pentru partea de postări și a treia etapă pentru combinarea tuturor într-un feed de social media.
+Având deja implementată partea de cloud storage din proiectul anterior, e timpul că el să își creeze rețelele sale de socializare favorite, și cum sesiunea se apropie, are nevoie de ajutorul vostru. Astfel, el v-a oferit funcționalitățile pe care le dorește să le aibă în versiunea Alpha a platformei sale, și este datoria voastră să implementați cerințele lui. El și-a separat cerințele în 3 etape astfel încât să coresupundă efectiv cu fiecare parte a aplicației (Prima etapă pentru partea de rețea de prietenie, a două etapă pentru partea de postări, și a treia etapă pentru a combină totul într-un feed de social media ). El v-a oferit un schelet de cod pentru viziunea să de ansamblu, și v-a promis un loc stabil de muncă și o parte din profitul platformei dacă reușiți să îl ajutați în timp util!
 
-Pentru primele două etape, puteți lucra în paralel, fără a fi nevoie de cod dintr-o etapă pentru a progresa în cealaltă. Totuși, task-ul 3 va implica combinarea muncii individuale din primele două etape pentru a crea un produs final.
+Tema aceasta este împărțită în 3 etape, primele 2 etape pot fi făcute în paralel, neavând o dependința una față de cealaltă. Scheletul temei ar trebui să va poată lasă să lucrați la această tema fără să fie nevoie să vă folosiți de cod din task 1 sau din task 2.
 
 Fiecare input va fi mereu valid, deci nu trebuie să vă faceți griji cu privire la tratarea cazurilor de parametri lipsă sau invalizi.
 
@@ -58,13 +59,13 @@ Exemplu:
 < Added connection Mihai - Andrei
 ```
 
-!Info Pentru fiecare input, se garantează că nu se vor folosi utilizatori care să nu existe în listă, sau utilizatori care să se repete.
+> Pentru fiecare input, se garantează că nu se vor folosi utilizatori care să nu existe în listă, sau utilizatori care să se repete.
 
 ### Elimină prieten
 
 `remove <nume-1> <nume-2>`
 
-Elimină legătura între doi utilizatori.
+Elimină legătura dintre doi utilizatori.
 
 Exemplu:
 
@@ -90,7 +91,7 @@ Exemplu:
 < The distance between Mihai - Mihnea is 3
 ```
 
-!Info Dacă nu există o legătură între cei doi utilizatori, se va afișa "There is no way to get from \<nume-1> to \<nume-2>"
+> Dacă nu există o legătură între cei doi utilizatori, se va afișa "There is no way to get from \<nume-1> to \<nume-2>"
 
 ### Sugestii
 
@@ -112,8 +113,7 @@ Exemplu:
 < Vlad
 ```
 
-!Info
-Dacă nu există sugestii pentru un utilizator, se va afișa "There are no suggestions for \<nume>"
+> Dacă nu există sugestii pentru un utilizator, se va afișa "There are no suggestions for \<nume>"
 
 ### Prieteni comuni
 
@@ -131,8 +131,7 @@ Exemplu:
 < Ioana
 ```
 
-!Info
-Dacă nu există niciun prieten comun, se va afișa: "No common friends for \<nume-1> and \<nume-2>"
+> Dacă nu există niciun prieten comun, se va afișa: "No common friends for \<nume-1> and \<nume-2>"
 
 ### Număr de prieteni
 
@@ -192,7 +191,7 @@ Exemplu:
 < Created "Titlu postare" for Mihai
 ```
 
-#### Restricții
+#### Restricții și precizări
 
 - Un utilizator poate avea mai multe postări
 - Un utilizator poate avea mai multe postări cu același titlu
@@ -203,7 +202,7 @@ Exemplu:
 
 `repost <nume> <post-id> [<repost-id>]`
 
-Creează un repost la o postare existentă. Dacă repost-ul are un repost id, atunci se consideră că este un repost la un repost.
+Creează un repost la o postare existentă. Dacă comanda `repost` are un repost id, atunci se consideră că este un repost la un repost.
 
 Exemplu:
 
@@ -268,29 +267,36 @@ Exemplu:
 
 ### Ratio
 
-`ratio <post-id> <repost-id>`
+`ratio <post-id>`
 
-Vom folosi indicatorul de ratio pentru a calcula cât de popular este un repost, raportat la postarea originală și la reposturile sale.
+În jargonul internetului, ratio înseamnă că un răspuns la o postare are mai multe like-uri decât postarea originală (ceea ce implică că opinia răspunsului este mai acceptată decât cea a postării originale).
 
-Ratio-ul se calculează astfel: `likes_repost / sum_likes`, unde `likes_repost` este numărul de like-uri pe repost, iar `sum_likes` este suma like-urilor de pe postarea originală și toate reposturile sale (vom include doar reposturile directe, pe calea de la postul original, până la repostul curent) - afișat cu 2 zecimale.
+Astfel, în situația noastră, vom implementa ratio-ul asemănător, dar pentru reposturi, astfel încât dacă un repost are mai multe like-uri decât postarea originală, spunem că această i-a dat ratio.
 
 Exemplu:
-Considerând exemplul de mai sus (cel de la comanda 'common-repost') și presupunând că fiecare postare/repost are exact un like, avem:
 
 ```
-> ratio 7
-< The ratio of Repost #7 by Alex is 0.33.
+> create Mihai "Opinie nepopulară"
+> repost Alex 1
+> like Alex 0 1
+> like Ana 0 1
+> ratio 0
+< Post 0 got ratio'd by repost 1
 ```
 
-Nota - se afișează numele utilizatorului care a dat repostul.
+#### Precizări
+
+- Dacă un repost are mai multe like-uri decât postarea originală, se va afișa că postarea originală a fost ratio'd de repostul respectiv 
+- Dacă mai multe repost-uri dau ratio unei postări, se va afișa cea cu cele mai multe like-uri (în caz de egalitate afișăm prima după indexul repost-ului) 
+- Dacă postarea originală are mai multe like-uri decât toate repost-urile, se va afișa `The original post is the highest rated`
 
 ### Delete Post/Repost
 
-`delete <post> [<repost-id>]`
+`delete <post-id> [<repost-id>]`
 
 Șterge o postare sau un repost. Odată ce o postare sau un repost a fost șters, toate reposturile care depind de aceasta vor fi șterse.
 
-!Warning Atentie - ID-urile postarilor și reposturilor nu se vor reutiliza.
+!Warning Atentie - ID-urile postărilor și reposturilor nu se vor reutiliza.
 
 Exemplu:
 
@@ -324,7 +330,7 @@ Se vor afișa reposturile în ordinea în care au fost făcute, alături de nume
 
 ![](assets/lca.png)
 
-Vom considera că titlul primei postări este `Cat video`, iar toate reposturile au fost făcute de același utilizator - `Alex`.
+Vom considera că titlul primei postări este `Cat video`, iar toate repost-urile au fost făcute de același utilizator - `Alex`.
 
 ```
 > get-reposts 1
@@ -339,8 +345,8 @@ Vom considera că titlul primei postări este `Cat video`, iar toate reposturile
 
 #### Restricții
 
-* Se vor afișa toate reposturile de pe un nivel în ordine crescătoare a ID-ului
-* Dacă un repost are reposturi, acestea vor fi afișate în ordine crescătoare a ID-ului, înainte de a se afișa următorul repost de pe același nivel
+- Se vor afișa toate reposturile de pe un nivel în ordine crescătoare a ID-ului
+- Dacă un repost are reposturi, acestea vor fi afișate în ordine crescătoare a ID-ului, înainte de a se afișa următorul repost de pe același nivel
 
 ## Task 3 (Social Media)
 
@@ -360,11 +366,11 @@ Exemplu:
 > create Ana "Ati auzit ultima melodie a lui Kanye?"
 > create Luca "Nu-mi vine sa cred cine a castigat Grand Prix-ul de la Miami"
 > feed Andrei 5
-< Luca: Nu-mi vine sa cred cine a castigat Grand Prix-ul de la Miami
-< Ana: Ati auzit ultima melodie a lui Kanye?
-< Alex: Buna TPU, merita sa dau la Poli?
-< Mihnea: Vand Golf 4
-< Mihai: Al doilea
+< Luca: "Nu-mi vine sa cred cine a castigat Grand Prix-ul de la Miami"
+< Ana: "Ati auzit ultima melodie a lui Kanye?"
+< Alex: "Buna TPU, merita sa dau la Poli?"
+< Mihnea: "Vand Golf 4"
+< Mihai: "Al doilea"
 ```
 
 ### View profile
@@ -433,8 +439,7 @@ Exemplu:
 
 Din graful acesta, se poate vedea cum Ana - Alex - Ioana - Mihai alcătuiesc un grup complet, iar Luca nu face parte din acest grup, fiindcă are doar 2 prieteni comuni.
 
-!Info
-O clică poate fi formată și dintr-un singur utilizator, caz în care afișăm doar numele lui la output
+> O clică poate fi formată și dintr-un singur utilizator, caz în care afișăm doar numele lui la output
 
 ## Link-uri utile
 
@@ -471,13 +476,13 @@ A: Da, dar punctajul nu se scaleaza, iar tu vei avea mai mult de lucru.
 
 ## Checker
 
-> ! Atentie, checkerul ruleaza toate testele cu valgrind. Daca aveti erori de
-valgrind nu primiti punctajul pe checkerul de pe moodle. Pentru a activa
-valgrind-ul pe checker, apasati tasta `v` si va aparea chenarul rosu.
+> **Atenție**, checkerul rulează toate testele cu valgrind. Dacă aveți erori de
+valgrind nu primiți punctajul pe checkerul de pe moodle. Pentru a activa
+valgrind-ul pe checker, apasați tasta `v` si va aparea chenarul rosu.
 
 ### Pași de instalare
 
-!Info Dacă ați mai avut instalat checkerul de la tema 1 de la IOCLA, puteți să săriți direct la pasul 2.
+>  Dacă ați mai avut instalat checkerul de la tema 1 de la IOCLA, puteți să săriți direct la pasul 2.
 
 Puteți instala checkerul rulând comanda `./install.sh`.
 Dacă apar orice fel de erori când rulați comanda, încercați și urmați următorii pași:
