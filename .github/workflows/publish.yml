@@ -1,6 +1,7 @@
 name: Publish
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - update_image
@@ -20,6 +21,6 @@ jobs:
 
       - name: Build the sd-tema-3 Docker image
         run: |
-          docker build . --tag ghcr.io/robertgrancsa/sd-tema-3:latest
-          docker run ghcr.io/robertgrancsa/sd-tema-3:latest
-          docker push ghcr.io/robertgrancsa/sd-tema-3:latest
+          docker build . --tag ghcr.io/sd-pub/tema3:latest
+          docker run ghcr.io/sd-pub/tema3:latest
+          docker push ghcr.io/sd-pub/tema3:latest
