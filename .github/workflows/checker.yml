@@ -8,14 +8,11 @@ jobs:
   checker:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/sd-pub/tema3:latest
+      image: ghcr.io/robertgrancsa/sd-tema-3:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Run tests
         run: |
-          pwd
-          ls
-          ls checker/
           hw_checker --legacy

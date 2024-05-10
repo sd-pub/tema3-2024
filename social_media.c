@@ -3,13 +3,12 @@
 */
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #include "users.h"
 #include "friends.h"
 #include "posts.h"
 #include "feed.h"
-
-extern graph_t connections;
 
 /**
  * Initializez every task based on which task we are running

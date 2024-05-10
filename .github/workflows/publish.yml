@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - update_image
+  create:
 
 jobs:
   publish-sd-tema-3-image:
@@ -21,6 +22,6 @@ jobs:
 
       - name: Build the sd-tema-3 Docker image
         run: |
-          docker build . --tag ghcr.io/sd-pub/tema3:latest
-          docker run ghcr.io/sd-pub/tema3:latest
-          docker push ghcr.io/sd-pub/tema3:latest
+          docker build . --tag ghcr.io/${{ github.actor }}/tema3:latest
+          docker run ghcr.io/${{ github.actor }}/tema3:latest
+          docker push ghcr.io/${{ github.actor }}/tema3:latest
