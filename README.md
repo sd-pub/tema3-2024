@@ -212,7 +212,7 @@ Exemplu:
 
 ```
 > repost Alex 1 2
-< Created Repost #3 for Alex
+< Created Repost #10 for Alex
 ```
 
 - După rularea comenzii, avem:
