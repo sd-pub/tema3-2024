@@ -165,6 +165,8 @@ Exemplu (se presupune că Andrei - Mihai - Ana sunt toți prieteni):
 < Mihai is the most popular
 ```
 
+> In caz de egalitate cu el si alti prieteni, se va prefera pe el insusi ca cel mai popular prieten. In caz de egalitate pentru prieteni, se va considera primul dupa id
+
 ## Task 2 (Postări și reposturi)
 
 Pentru această etapă, vom lucra cu o structură de date arborescentă, care va fi folosită pentru a stoca postările și reposturile. Fiecare postare va avea un id unic și va putea avea mai multe reposturi. Un repost va fi o postare în sine, care va avea un id unic și va fi legată de postarea originală. Vom folosi un arbore pentru a stoca aceste postări și reposturi, unde fiecare nod va avea un câmp `events`, care va fi un arbore de postări și reposturi.
