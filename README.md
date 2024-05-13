@@ -22,6 +22,8 @@ Unde id.moodle este id-ul vostru de pe Teams/Moodle, de exemplu andrei.popescu. 
 
 ## Actualizări
 
+- 14.05 (00:23) - adaugat precizari indexare
+
 ## Obiective
 
 În urma realizării acestei teme veți:
@@ -200,9 +202,11 @@ Exemplu:
 - Titlul unei postări poate avea maxim 280 de caractere
 - ID-ul unei postări va fi un număr întreg pozitiv, unic pentru fiecare postare
 
+> ​Indexarea se va face de la 1
+
 ### Repost
 
-`repost <nume> <post-id> [<repost-id>]`
+`repost <nume> <post-id> [repost-id]`
 
 Creează un repost la o postare existentă. Dacă comanda `repost` are un repost id, atunci se consideră că este un repost la un repost.
 
@@ -232,7 +236,7 @@ Exemplu:
 
 `common-repost <post> <repost-id-1> <repost-id-2>`
 
-Găsește primul repost comun al două reposturi. Dacă nu există, se va afișa "No common reposts for `<repost-id-1>` and `<repost-id-2>`"
+Găsește primul repost comun al două reposturi.
 
 Exemplu:
 
@@ -245,7 +249,7 @@ Exemplu:
 
 ### Like
 
-`like <nume> <post-id> [<repost-id>]`
+`like <nume> <post-id> [repost-id]`
 
 Adaugă un like la o postare sau repostare. Dacă se dă repost id, atunci se va adăuga like-ul la repostare.
 
@@ -254,9 +258,9 @@ Exemplu:
 ```
 > create Mihai "Titlu postare"
 < Created "Titlu postare" for Mihai
-> like Alex 0
+> like Alex 1
 < Alex liked "Titlu postare"
-> like Alex 0
+> like Alex 1
 < Alex unliked "Titlu postare"
 ```
 
@@ -280,10 +284,10 @@ Exemplu:
 ```
 > create Mihai "Opinie nepopulară"
 > repost Alex 1
-> like Alex 0 1
-> like Ana 0 1
-> ratio 0
-< Post 0 got ratio'd by repost 1
+> like Alex 1 2
+> like Ana 1 2
+> ratio 1
+< Post 1 got ratio'd by repost 2
 ```
 
 #### Precizări
@@ -294,7 +298,7 @@ Exemplu:
 
 ### Delete Post/Repost
 
-`delete <post-id> [<repost-id>]`
+`delete <post-id> [repost-id]`
 
 Șterge o postare sau un repost. Odată ce o postare sau un repost a fost șters, toate reposturile care depind de aceasta vor fi șterse.
 
@@ -303,13 +307,13 @@ Exemplu:
 Exemplu:
 
 ```
-> delete 0
+> delete 1
 < Deleted "Titlu postare"
 ```
 
 ### Get likes
 
-`get-likes <post-id> [<repost-id>]`
+`get-likes <post-id> [repost-id]`
 
 Afișează numărul de like-uri pentru o postare sau repostare.
 
@@ -318,13 +322,13 @@ Exemplu:
 ```
 > get-likes 1 2
 < Repost #2 has 5 likes
-> get-likes 0
+> get-likes 1
 < Post "Titlu postare" has 0 likes
 ```
 
 ### Get reposts
 
-`get-reposts <post/repost-id>`
+`get-reposts <post-id> [repost-id]`
 
 Afișează toată ierarhia de reposturi pentru un post/repost.
 
