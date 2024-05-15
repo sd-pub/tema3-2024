@@ -39,10 +39,10 @@ int main(void)
 
 	char *input = (char *)malloc(MAX_COMMAND_LEN);
 	while (1) {
-		input = fgets(input, MAX_COMMAND_LEN, stdin);
+		char *command = fgets(input, MAX_COMMAND_LEN, stdin);
 
 		// If fgets returns null, we reached EOF
-		if (!input)
+		if (!command)
 			break;
 
 		#ifdef TASK_1
@@ -57,6 +57,9 @@ int main(void)
 		handle_input_feed(input);
 		#endif
 	}
+
+	free_users();
+	free(input);
 
 	return 0;
 }

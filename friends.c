@@ -34,4 +34,6 @@ void handle_input_friends(char *input)
 	else if (!strcmp(cmd, "popular"))
 		(void)cmd;
 		// TODO: Add function
+
+	free(commands);
 }
