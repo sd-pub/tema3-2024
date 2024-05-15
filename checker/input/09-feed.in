@@ -1322,8 +1322,8 @@ get-likes 61
 get-likes 110
 delete 25 35
 get-reposts 25
-get-reposts 12
+get-reposts 1 12
 delete 2 66
 get-reposts 2
-get-reposts 16
-get-reposts 69
+get-reposts 6 16
+get-reposts 9 69
