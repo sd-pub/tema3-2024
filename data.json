@@ -3,37 +3,307 @@
     [
       {
         "id": 0,
-        "name": "Friends Dummy",
+        "name": "Distance",
         "status": "0",
         "log": "",
         "time_normal": 0.0,
         "time_valgrind": 0.0,
         "timeout": 30000,
-        "test_score": 30
+        "test_score": 3
+      },
+      {
+        "id": 1,
+        "name": "Distance Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 2,
+        "name": "Suggestion",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 3,
+        "name": "Suggestion Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 4,
+        "name": "Common",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 5,
+        "name": "Common Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 6,
+        "name": "Popular",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 7,
+        "name": "Popular Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 8,
+        "name": "Friends Complex 1",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 9,
+        "name": "Friends Complex 2",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
       }
     ],
     [
       {
         "id": 0,
-        "name": "Posts Dummy",
+        "name": "Post/Repost",
         "status": "0",
         "log": "",
         "time_normal": 0.0,
         "time_valgrind": 0.0,
         "timeout": 30000,
-        "test_score": 30
+        "test_score": 3
+      },
+      {
+        "id": 1,
+        "name": "Post/Repost Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 2,
+        "name": "LCA",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 3,
+        "name": "LCA Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 4,
+        "name": "Like",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 5,
+        "name": "Like Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 6,
+        "name": "Ratio",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 7,
+        "name": "Ratio Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 8,
+        "name": "Posts Complex 1",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 9,
+        "name": "Posts Complex 2",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
       }
     ],
     [
       {
         "id": 0,
-        "name": "Feed Dummy",
+        "name": "Feed",
         "status": "0",
         "log": "",
         "time_normal": 0.0,
         "time_valgrind": 0.0,
         "timeout": 30000,
-        "test_score": 30
+        "test_score": 3
+      },
+      {
+        "id": 1,
+        "name": "Feed Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 2,
+        "name": "Profile",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 3,
+        "name": "Profile Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 4,
+        "name": "Reposts",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 5,
+        "name": "Reposts Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 6,
+        "name": "Clique",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 7,
+        "name": "Clique Complex",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 8,
+        "name": "Feed Complex 1",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
+      },
+      {
+        "id": 9,
+        "name": "Feed Complex 2",
+        "status": "0",
+        "log": "",
+        "time_normal": 0.0,
+        "time_valgrind": 0.0,
+        "timeout": 30000,
+        "test_score": 3
       }
     ]
   ],

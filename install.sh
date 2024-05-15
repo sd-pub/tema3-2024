@@ -3,9 +3,6 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 source "$HOME/.cargo/env"
 
 echo "Downloading checker"
-cargo install hw-checker
-
-ln -s ~/.cargo/bin/checker-tema-3-sd .
-mv checker-tema-3-sd check
+cargo install hw_checker
 
 echo "Install finished. Good luck!"
