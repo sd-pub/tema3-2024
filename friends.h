@@ -9,6 +9,20 @@
  *
  * Please add any necessary parameters to the functions
 */
-void handle_input_friends(char *input);
+void handle_input_friends(char *input, matrix_graph_t *graph);
+
+void add_friend(matrix_graph_t *graph, char *nume_1, char *nume_2);
+
+void remove_friend(matrix_graph_t *graph, char *nume_1, char *nume_2);
+
+void distance_friend(matrix_graph_t *graph, char *nume_1, char *nume_2);
+
+void suggestions_friend(matrix_graph_t *graph, char *nume);
+
+void common_people(matrix_graph_t *graph, char *nume_1, char *nume_2);
+
+void influencer(matrix_graph_t *graph, char *nume);
+
+int friends(matrix_graph_t *graph, char *nume);
 
 #endif // FRIENDS_H

@@ -1,5 +1,35 @@
 #include <stdint.h>
 
+typedef struct
+{
+	int **matrix; /* Matricea de adiacenta a grafului */
+	int nodes;    /* Numarul de noduri din graf. */
+} matrix_graph_t;
+
+matrix_graph_t*
+mg_create(int nodes);
+
+void
+mg_add_edge(matrix_graph_t *graph, int src, int dest);
+
+int
+mg_has_edge(matrix_graph_t *graph, int src, int dest);
+
+void
+mg_remove_edge(matrix_graph_t *graph, int src, int dest);
+
+void
+mg_freegraph(matrix_graph_t *graph);
+
+void
+print_matrix_graph(matrix_graph_t *mg);
+
+int
+mg_dist(matrix_graph_t *graph, int start_node, int target_node);
+
+void
+mg_grandkids(matrix_graph_t *graph, int start_node);
+
 /**
  * Initializes the user list
 */

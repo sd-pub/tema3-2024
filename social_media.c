@@ -34,7 +34,7 @@ void init_tasks(void)
 int main(void)
 {
 	init_users();
-
+	matrix_graph_t *graph = mg_create(MAX_PEOPLE);
 	init_tasks();
 
 	char *input = (char *)malloc(MAX_COMMAND_LEN);
@@ -46,7 +46,7 @@ int main(void)
 			break;
 
 		#ifdef TASK_1
-		handle_input_friends(input);
+		handle_input_friends(input, graph);
 		#endif
 
 		#ifdef TASK_2
@@ -60,6 +60,7 @@ int main(void)
 
 	free_users();
 	free(input);
+	mg_freegraph(graph);
 
 	return 0;
 }
